@@ -5,6 +5,14 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@khaf/magik@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@khaf/magik@workspace:."
+  dependencies:
+    "@napi-rs/cli": ^2.11.4
+  languageName: unknown
+  linkType: soft
+
 "@napi-rs/cli@npm:^2.11.4":
   version: 2.11.4
   resolution: "@napi-rs/cli@npm:2.11.4"
@@ -13,11 +21,3 @@ __metadata:
   checksum: f9f1036520ba43685c782c4eafdd56176930d317ab31c6841c2f033e09f4cac7c9561ccdfeaefcb30c2ac5e64390fb308a5658eb47c373e8131e138ad38b98c1
   languageName: node
   linkType: hard
-
-"lrs@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "lrs@workspace:."
-  dependencies:
-    "@napi-rs/cli": ^2.11.4
-  languageName: unknown
-  linkType: soft
