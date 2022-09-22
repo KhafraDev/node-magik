@@ -1,0 +1,18 @@
+{
+  "name": "@khaf/magik-freebsd-x64",
+  "version": "0.0.0",
+  "os": [
+    "freebsd"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "magik.freebsd-x64.node",
+  "files": [
+    "magik.freebsd-x64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
