@@ -236,6 +236,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { magik } = nativeBinding
+const { magikSync, Magik } = nativeBinding
 
-module.exports.magik = magik
+module.exports.magikSync = magikSync
+module.exports.Magik = Magik
