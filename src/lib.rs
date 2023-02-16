@@ -23,9 +23,9 @@ pub fn magik_sync(buffer: Uint8Array) -> Result<Uint8ClampedArray, Error> {
 
   let mut v: Vec<u8> = Vec::new();
 
-  match DynamicImage::ImageRgba8(resized).write_to(&mut v, ImageOutputFormat::Png) {
-    Ok(_) => return Ok(Uint8ClampedArray::new(v)),
-    Err(err) => return Err(Error::from_reason(err.to_string())),
+  return match DynamicImage::ImageRgba8(resized).write_to(&mut v, ImageOutputFormat::Png) {
+    Ok(_) => Ok(Uint8ClampedArray::new(v)),
+    Err(err) => Err(Error::from_reason(err.to_string())),
   }
 }
 
